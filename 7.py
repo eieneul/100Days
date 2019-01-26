@@ -225,6 +225,32 @@ def f7():
     print(scores)
 
 
+def f8():
+    """
+    模拟滚动字幕
+
+    """
+    import os
+    import time
+
+    content = "Welcome to Beijing! "
+    while True:
+        # windows 命令行下清屏
+        # os.system('cls')
+        print(content)
+        time.sleep(0.2)
+        content = content[1:] + content[0]
+
+
+def f9(code_len=4):
+    import random
+    all_chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    code = ''
+    for _ in range(code_len):
+        code += random.choice(all_chars)
+    return code
+
+
 if __name__ == '__main__':
     # f1()
     # f2()
@@ -237,4 +263,6 @@ if __name__ == '__main__':
     #     print(val)
     # f5()
     # f6()
-    f7()
+    # f7()
+    # f8()
+    print(f9())
