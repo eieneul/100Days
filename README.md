@@ -1,4 +1,4 @@
-<Python 100 Days Challenge>
+<Python Basics Review>
 
 via: https://github.com/jackfrued/Python-100-Days
 
